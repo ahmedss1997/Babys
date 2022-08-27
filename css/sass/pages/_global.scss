@@ -1,0 +1,35 @@
+
+html {
+  --scrollbarBG: #ddd;
+  --thumbBG: #34c6f2;
+  overflow-x: hidden;
+}
+
+body {
+  // background-color: #f6f6f6;
+  height: auto;
+  overflow: hidden;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  &::-webkit-scrollbar {
+    width: 11px;
+  }
+  &::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 2px solid var(--scrollbarBG);
+  }
+  font: {
+    family: tahoma;
+    size: 16px;
+  }
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+}

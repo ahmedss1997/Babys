@@ -1,0 +1,19 @@
+
+
+%transition {
+  @include prefixer (transition, all .5s ease-in-out, webkit moz o);
+}
+
+
+.scrolled {
+  height: 70px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 10px 0;
+  z-index: 40;
+  background-color: $other-color;
+  background-color: #fff;
+  box-shadow: 0 0px 10px 0 rgba(67, 67, 69, 0.35);
+}

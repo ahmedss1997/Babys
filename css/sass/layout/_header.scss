@@ -1,0 +1,274 @@
+
+.header {
+  width: auto;
+  height: 110vh;
+  /*background: url(../imges/slide/slide1.jpg);*/
+  background-size: cover;
+  .navbar {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:2;
+  }
+  .navbar-header {
+    width: 100%;
+    text-align: center;
+    @media (max-width: 1200px) {
+      width: auto;
+      height: 50px;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      padding: 0;
+      z-index: 40;
+      background-color: $other-color;
+      box-shadow: 0 0px 10px 0 rgba(67, 67, 69, 0.35);
+    }
+    h3 {
+      margin-top: 8px;
+      text-align: center;
+      font-weight: 700;
+      display: none;
+      color: $main-color;
+      @media (max-width: 1200px) {
+        display: inline-block;
+      }
+    }
+    i.fa-times {
+      margin-top: 10px;
+      margin-left: 15px;
+      float: left;
+      cursor: pointer;
+      color: $sub-color;
+      &:hover {
+        color: $main-color;
+      }
+      @media (max-width: 767px) {
+        margin-left: 30px;
+      }
+    }
+    button {
+      @media (max-width: 1200px) {
+        display: block;
+        margin-left: 5px;
+        margin-top: 5px;
+        float: left !important;
+        &:hover {
+          span.icon-bar  {
+            background-color: $main-color;
+          }
+        }
+      }
+      @media (max-width: 767px) {
+        margin-left: 20px;
+      }
+      span.icon-bar {
+        @extend %transition;
+        background-color: $sub-color;
+        width: 28px;
+        height: 4px;
+      }
+    }
+    a.navbar-brand {
+      @media (max-width: 1200px) {
+        display: none !important;
+      }
+    }
+    ul.navbar-nav {
+      margin-top: 30px;
+      margin-right: 10px;
+      li {
+        padding: 15px;
+        color: $dark-color;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        &.active1 {
+          color: $sub-color;
+          @extend %transition;
+          @media (max-width: 1200px) {
+            color: $main-color;
+          }
+        }
+        &:not(:last-of-type):hover {
+          color: $sub-color;
+        }
+        @media (max-width: 1200px) {
+          display: none;
+          color: $main-color;
+        }
+        
+        i.fa-search {
+          padding-right: 20px;
+          @extend %transition;
+          cursor: pointer;
+          &:hover {
+            color: $sub-color;
+          }
+        }
+        i.fa-shopping-cart {
+          padding-right: 5px;
+        }
+        span {
+          cursor: pointer;
+          @extend %transition;
+          &:hover {
+            color: $sub-color;
+          }
+        }
+      }
+    }
+  }
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: $other-color;
+    opacity: 0.5;
+    display: none;
+    @media (max-width: 1200px) {
+      display: block; 
+      margin-top: -20px;
+      position: absolute;
+    }
+  }
+  .slick-active .txt .h1{
+    animation: fadeInUpSD 2s .5s ease 1;
+  }
+  .slick-active .txt p{
+    animation: fadeInUpSD 1s .5s ease 1;
+  }
+  .content-header {
+    /*width: 50%;
+    float: right;*/
+    /*margin-top: 100px;*/
+    .slide {
+      min-height:110vh;
+      background-size:cover;
+      background-position: center; 
+      .txt {
+        margin-top:200px;
+      }
+    }
+    position: relative;
+    @media (max-width: 991px) {
+      //width: 60%;
+      //margin-right: 160px;
+      text-align: center;
+    }
+    @media (max-width: 767px) {
+      //margin-right: 120px;
+    }
+    .h1 {
+      margin-bottom: 40px;
+      font-weight: 700;
+      font-size: 50px;
+      padding-right: 83px;
+      @media (max-width: 991px) {
+        padding-right: 0px;
+        font-size: 40px;
+      }
+      @media (max-width: 767px) {
+        font-size: 35px;
+      }
+    }
+    p {
+      padding-right: 130px;
+      line-height: 1.5;
+      font-size: 18px;
+      @media (max-width: 991px) {
+        padding-right: 0px;
+        font-size: 16px;
+      }
+    }
+    button {
+      padding: 13px 30px;
+      border-radius: 50px;
+      background-color: $main-color;
+      color: $other-color;
+      border: 1px solid $main-color;
+      font-weight: 700;
+      margin-right: 30px;
+      margin-bottom: 40px;
+      @extend %transition;
+      &:hover {
+        background-color: $sub-color;
+        border: 1px solid $sub-color;
+        color: $other-color;
+      }
+    }
+      button.transparent {
+        background: transparent;
+        color: $sub-color;
+        border: 1px solid $sub-color;
+        &:hover {
+          background-color: $main-color;
+          color: $other-color;
+          border: 1px solid $main-color;
+        }
+    }
+  }
+  .menue {
+    width: 300px;
+    height: 100%;
+    background-color: $other-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 30;
+    margin-top: 50px;
+    @extend %transition;
+    i {
+      cursor: pointer;
+      @extend %transition;
+    }
+    img {
+      width: 120px;
+      height: 120px;
+      margin: 20px 80px;
+    }
+    ul.menue-toggle {
+      margin-top: 0px;
+      a {
+        text-decoration: none;
+        li {
+          width: 80%;
+          height: 40px;
+          font-weight: 700;
+          margin-bottom: 10px;
+          margin-left: 30px;
+          padding: 25px;
+          padding-left: 5px;
+          padding-top: 0px;
+          border-bottom: 1px solid #ccc;
+          color: $dark-color;
+          opacity: 0.8;
+          cursor: pointer;
+          &:hover {
+            color: $sub-color;
+          }
+          &.active {
+            color: $sub-color;
+          }
+          &.border {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// animation on the heading
+
+@keyframes fadeInUpSD {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}

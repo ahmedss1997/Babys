@@ -1,0 +1,159 @@
+
+section.Events {
+  background-color: $gray-color;
+  margin-top: -20px;
+  padding-bottom: 100px;
+  @media (max-width: 767px) {
+    margin-top: -35px;
+  }
+  h2 {
+    color: $main-color;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .col-sm-5 {
+    margin-left: 0px;
+    margin-bottom: 50px;
+    &:first-of-type {
+      margin-left: 110px;
+      @media (max-width: 991px) {
+        margin-left: 0;
+      }
+    }
+    &:nth-of-type(3) {
+      margin-left: 110px;
+      @media (max-width: 991px) {
+        margin-left: 0;
+      }
+    }
+    @media (max-width: 991px) {
+      width: 360px;
+      margin-left: 0;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+      padding: 0 50px;
+    }
+    .event {
+      .hover {
+        // @extend %transition;
+        &:hover {
+          .layer {
+            display: block;
+          }
+        }
+        img {
+          width: 100%;
+        }
+        .layer {
+          position: absolute;
+          top: 0;
+          left: 0;
+          margin-left: 15px;
+          background-color: $main-color;
+          color: $other-color;
+          opacity: .9;
+          display: none;
+          // padding-top: 100px;
+          // @extend %transition;
+          @media (max-width: 767px) {
+            margin-left: 50px;
+          }
+          button {
+            padding: 13px 30px;
+            border-radius: 50px;
+            background-color: $sub-color;
+            color: $other-color;
+            border: 2px solid $sub-color;
+            font-weight: 700;
+            display: flex;
+            margin-bottom: 30px;
+            margin-top: 150px;
+            @extend %transition;
+            &:last-of-type {
+              background-color: transparent;
+              border: 2px solid $other-color;
+              color: $other-color;
+              margin-top: 10px;
+            }
+            &:hover {
+              background-color: $other-color;
+              border: 2px solid $other-color;
+              color: $sub-color;
+            }
+          }
+        }
+      }
+      .content {
+        display: flex;
+        @media (max-width: 991px) {
+          display: block;
+          text-align: center;
+        }
+        .date {
+          width: 85px;
+          background-color: $main-color;
+          color: $other-color;
+          text-align: center;
+          font-size: 14px;
+          padding: 10px;
+          @media (max-width: 991px) {
+            width: 100%;
+          }
+          span {
+            font-weight: 700;
+            font-size: 28px;
+          }
+        }
+        .person {
+          width: 100%;
+          background-color: $other-color;
+          padding: 20px 25px;
+          h4 {
+            color: $sub-color;
+            cursor: pointer;
+            &:hover {
+              color: $main-color;
+            }
+          }
+          i {
+            margin-right: 15px;
+            font-size: 20px;
+            color: $main-color;
+            cursor: pointer;
+            &:hover {
+              color: $main-color;
+            }
+          }
+          span {
+            color: $p-color;
+            cursor: pointer;
+            &:hover {
+              color: $main-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  button {
+    padding: 13px 30px;
+    border-radius: 50px;
+    background-color: $sub-color;
+    color: $other-color;
+    border: 2px solid $sub-color;
+    font-weight: 700;
+    // margin-bottom: 100px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    @extend %transition;
+    &:hover {
+      background-color: $main-color;
+      border: 2px solid $main-color;
+      color: $other-color;
+    }
+  }
+}

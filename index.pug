@@ -1,0 +1,376 @@
+doctype html
+html(lang="en", dir="ltr")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE-edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="css/bootstrap3.css")
+    link(rel="stylesheet", href="css/all.min.css")
+    link(rel="stylesheet", href="css/slick.css")
+    link(rel="stylesheet", href="css/slick-theme.css")
+    link(rel="stylesheet", href="css/uikit.min.css")
+    link(rel="stylesheet", href="css/animate.css")
+    link(rel="stylesheet", href="css/main.css")
+    script(src="JS/html5shiv.min.js")
+    script(src="JS/respond.min.js")
+    title Baby's
+  body
+
+    .header
+      nav.navbar(role='navigation')
+        .container-fluid
+          .navbar-header
+            h3 Home
+            i.fas.fa-times.fa-2x
+            button.navbar-toggle
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='#')
+              img(src="imges/home/logo.png", alt="")
+            ul.nav.navbar-nav.navbar-right
+              li.active1 Home
+              li Elements
+              li pages
+              li News
+              li Gallery
+              li Shop
+              li Donate
+              li Contacts
+              li #[i.fas.fa-search] #[i.fas.fa-shopping-cart] #[span 2]
+      .overlay
+      .content-header.autoplay
+        div
+          .slide(style='background-image:url("imges/slide/slide1.jpg")')
+            .container
+              .row
+                .col-md-6
+                .col-md-6
+                  .txt
+                    h2.h1 Play, Explore and Learn.
+                    p Programs of Kids Tree Preschool include world-class curriculum and knowledgeable child development professionals that meet the needs of     children at every age and stage.
+                    button Sign Up for Excursion
+                    button.transparent Learn More
+        div
+          .slide(style='background-image:url("imges/slide/slide2.jpg")')
+            .container
+              .row
+                .col-md-6
+                  .txt
+                    h2.h1 Play, Explore and Learn.
+                    p Programs of Kids Tree Preschool include world-class curriculum and knowledgeable child development professionals that meet the needs of     children at every age and stage.
+                    button Sign Up for Excursion
+                    button.transparent Learn More
+                .col-md-6
+        div
+          .slide(style='background-image:url("imges/slide/slide3.jpg")')
+            .container
+              .row
+                .col-md-6
+                .col-md-6
+                  .txt
+                    h2.h1 Play, Explore and Learn.
+                    p Programs of Kids Tree Preschool include world-class curriculum and knowledgeable child development professionals that meet the needs of     children at every age and stage.
+                    button Sign Up for Excursion
+                    button.transparent Learn More
+      .menue.hidden
+        img(src="imges/slide/logo1.png", alt="")
+        ul.menue-toggle
+          a #[li.active Home]
+          a #[li Elements]
+          a #[li pages]
+          a #[li News]
+          a #[li Gallery]
+          a #[li Shop]
+          a #[li Donate]
+          a #[li.border Contacts]
+
+
+
+    section.our-center
+      .row
+        .container
+          .col-sm-6
+            img(src="imges/home/home.jpg", class="wow fadeInRight" data-wow-duration="1s" data-wow-offset="300" )
+          .col-sm-5
+            h2(class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s" data-wow-offset="300" ) About #[span Our Center]
+            p(class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s" data-wow-offset="300" ) We offer a play-based emergent curriculum complete with low teacher to child ratios. Come see our environment and how it is designed to promote exploration, adventure and imaginative play. We believe that children are active participants in their own learning. That’s why we encourage them to ask questions
+            button(class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s" data-wow-offset="200" ) Learn More #[i.fas.fa-arrow-right]
+
+    section.our-program
+      h2.h1 Our Programs
+      p(class="wow pulse" data-wow-duration="1s" data-wow-offset="400" ).program Our Featured Programs are selected through a rigorous process and uniquely created for each semester.
+      .row
+        .container
+          .col-md-4.col-sm-6
+            .text(class="wow pulse" data-wow-duration="1s" data-wow-offset="400" )
+              img(src="imges/programe/program1.jpg", alt="")
+              span June 3, 2019
+              h4 Arts Programs
+              p Charles Banks
+              i.fa.fa-hourglass-half
+              i.fas.fa-star
+              i.fas.fa-desktop
+          .col-md-4.col-sm-6
+            .text(class="wow pulse" data-wow-duration="1s" data-wow-offset="400" )
+              img(src="imges/programe/program2.jpg", alt="")
+              span June 3, 2019
+              h4 Foreign Language Programs
+              p Maria Howard
+              i.fa.fa-hourglass-half
+              i.fas.fa-star
+          .col-md-4.col-sm-6
+            .text(class="wow pulse" data-wow-duration="1s" data-wow-offset="400" )
+              img(src="imges/programe/program3.jpg", alt="")
+              span June 3, 2019
+              h4 Sports Programs
+              p Steven Carter
+              i.fa.fa-hourglass-half
+              i.fas.fa-star
+              i.fas.fa-desktop
+      button(class="wow fadeInUpBig" data-wow-duration="1s" data-wow-offset="300") view All Programs
+
+
+    section.our-features
+      .row
+        .col-md-7
+          .feat
+            h2.h1(class="wow slideInLeft" data-wow-duration="2s" data-wow-delay=".3s" data-wow-offset="250") Our #[span Features]
+            p(class="wow slideInLeft" data-wow-duration="2s" data-wow-delay=".5s" data-wow-offset="250") At Kids Tree, we see our aim in providing care and an early learning environment which is tailored to each individual child’s needs, in safe, secure, happy and relaxed surroundings. We are committed to your children’s success!
+            .all
+              .icon(class="wow slideInLeft" data-wow-duration="2s" data-wow-delay=".7s" data-wow-offset="250")
+                i.fas.fa-briefcase
+                .num
+                  p 30+
+                  h4 Certified Teachers
+              .icon(class="wow slideInLeft" data-wow-duration="2s" data-wow-delay=".8s" data-wow-offset="250")
+                i.fas.fa-graduation-cap
+                .num
+                  p 15
+                  h4 Awards
+              .icon(class="wow slideInLeft" data-wow-duration="2s" data-wow-delay=".7s" data-wow-offset="150")
+                i.fas.fa-user-friends
+                .num
+                  p 100
+                  h4 childern
+              .icon(class="wow slideInLeft" data-wow-duration="2s" data-wow-delay=".8s" data-wow-offset="150")
+                i.fas.fa-city
+                .num
+                  p 10
+                  h4 Featured Programs
+        .col-md-5.hidden-sm.hidden-xs
+          .img(class="wow slideInRight" data-wow-duration="2s" data-wow-offset="250" )
+
+    section.Events
+      h2.h1(class="wow fadeInDownBig" data-wow-duration="1s" data-wow-offset="300") Events
+      .row
+        .container
+          .col-sm-5.col-xs-12
+            .event(class="wow fadeIn" data-wow-duration="1.2s" data-wow-delay=".9s" data-wow-offset="250")
+              .hover
+                img(src="imges/events/events2.jpg", alt="")
+                .layer
+                  button Book Now
+                  button Learn More
+              .content
+                .date #[span 31] #[br] September 5:00pm
+                .person
+                  h4 Preschool Dinner
+                  i.fas.fa-chess-pawn 
+                  span Walter Stanley
+          .col-sm-5.col-xs-12
+            .event(class="wow slideInUp" data-wow-duration="1.5s" data-wow-delay=".7s" data-wow-offset="250")
+              .hover
+                img(src="imges/events/events1.jpg", alt="")
+                .layer
+                  button Book Now
+                  button Learn More
+              .content
+                .date #[span 5] #[br] July 5:00pm
+                .person
+                  h4 Grandparents Day
+                  i.fas.fa-chess-pawn 
+                  span Raymond Salazar
+          .col-sm-5.col-xs-12
+            .event(class="wow fadeIn" data-wow-duration="1.2s" data-wow-delay=".9s" data-wow-offset="200")
+              .hover
+                img(src="imges/events/events3.jpg", alt="")
+                .layer
+                  button Book Now
+                  button Learn More
+              .content
+                .date #[span 15] #[br] June 5:00pm
+                .person
+                  h4 Family Celebration
+                  i.fas.fa-chess-pawn 
+                  span Bruce Hawkins
+          .col-sm-5.col-xs-12
+            .event(class="wow slideInUp" data-wow-duration="1.5s" data-wow-delay=".7s" data-wow-offset="200")
+              .hover
+                img(src="imges/events/events4.jpg", alt="")
+                .layer
+                  button Book Now
+                  button Learn More
+              .content
+                .date #[span 5] #[br] June 5:00pm
+                .person
+                  h4 Summer Drawing Contest
+                  i.fas.fa-chess-pawn 
+                  span Danielle Garza 
+      button(class="wow slideInLeft" data-wow-duration="2s" data-wow-offset="200") View Event Calendar #[i.fas.fa-arrow-right]
+
+
+    section.our-clients
+      .testi
+        div
+          .client
+            p.lead Words truly can't express how grateful I am that a preschool like this exists. I thought that a place like this was a mythical unicorn that parents searched for, but never found.
+            img(src="imges/parallax/user1.jpg", alt="")
+            .user
+              span Debra Banks
+              span.small Sales manager
+        div
+          .client
+            p.lead I want to take this opportunity to thank you and your staff for all you have done for my daughter. I am in awe at how much Lauren has grown both and intellectually since last.
+            img(src="imges/parallax/user2.jpg", alt="")
+            .user
+              span Steven Alvarez
+              span.small Taxi driver
+        div
+          .client
+            p.lead Words truly can't express how grateful I am that a preschool like this exists. I thought that a place like this was a mythical unicorn that parents searched for, but never found.
+            img(src="imges/parallax/user1.jpg", alt="")
+            .user
+              span Debra Banks
+              span.small Sales manager
+        div
+          .client
+            p.lead I want to take this opportunity to thank you and your staff for all you have done for my daughter. I am in awe at how much Lauren has grown both and intellectually since last.
+            img(src="imges/parallax/user2.jpg", alt="")
+            .user
+              span Steven Alvarez
+              span.small Taxi driver
+
+
+    section.news
+      h2.h1(class="wow bounceInUp" data-wow-duration="1s" data-wow-offset="300") Latest #[span News]
+      .row
+        .container
+          .col-md-3.col-sm-6(class="wow bounceInUp" data-wow-duration="2s" data-wow-delay=".5s" data-wow-offset="250")
+            img(src="imges/news/news4.jpg", alt="")
+            .info
+              h4 Mother’s Day
+              p Mother’s Day is a celebration honoring the mother of the family, as well as motherhood, maternal bonds, and the influence of mothers
+              i.fas.fa-business-time
+              span 2 days ago
+          .col-md-3.col-sm-6(class="wow bounceInUp" data-wow-duration="2s" data-wow-delay=".4s" data-wow-offset="250")
+            img(src="imges/news/news3.jpg", alt="")
+            .info
+              h4 Painting Class
+              p In our kids' painting classes, we guarantee the best personalized instruction and one-on-one guidance for every single child who walks through
+              i.fas.fa-business-time
+              span 2 days ago
+          .col-md-3.col-sm-6(class="wow bounceInUp" data-wow-duration="2s" data-wow-delay=".3s" data-wow-offset="250")
+            img(src="imges/news/news2.jpg", alt="")
+            .info
+              h4 Our New Teacher
+              p We are glad to welcome Mary Johnson, our new teacher. She now teaches the class of 5 children aged up to 7 years old at Kids Tree Preschool.
+              i.fas.fa-business-time
+              span 2 days ago
+          .col-md-3.col-sm-6(class="wow bounceInUp" data-wow-duration="2s"  data-wow-delay=".2s" data-wow-offset="250")
+            img(src="imges/news/news1.jpg", alt="")
+            .info
+              h4 We Integrate Creativity
+              p All children need to be truly creative is the freedom to commit themselves completely to the effort and make
+              i.fas.fa-business-time
+              span 2 days ago
+      button(class="wow slideInRight" data-wow-duration="2s" data-wow-offset="180") View All New Posts
+
+
+    section.gallery
+      .postion
+        img(src="imges/gallery/gallery1.jpg")
+        .search
+          i.fas.fa-search-plus.fa-2x
+      .postion
+        img(src="imges/gallery/gallery2.jpg")
+        .search
+          i.fas.fa-search-plus.fa-2x
+      .postion
+        img(src="imges/gallery/gallery3.jpg")
+        .search
+          i.fas.fa-search-plus.fa-2x
+      .postion
+        img(src="imges/gallery/gallery4.jpg")
+        .search
+          i.fas.fa-search-plus.fa-2x
+      .postion
+        img(src="imges/gallery/gallery5.jpg")
+        .search
+          i.fas.fa-search-plus.fa-2x
+      .postion
+        img(src="imges/gallery/gallery6.jpg")
+        .search
+          i.fas.fa-search-plus.fa-2x
+
+
+    section.contact-us
+      .row
+        .container
+          .col-md-4
+            .location
+              i.fas.fa-phone.fa-2x
+              p 1-800-1234-567
+          .col-md-4
+            .location.border 
+              i.fas.fa-map-marker-alt.fa-2x
+              p 2130 Fulton Street San Diego, #[br] CA 94117-1080 USA
+          .col-md-4
+            .location
+              i.far.fa-envelope-open.fa-2x
+              p mail@demolink.org
+
+
+    section.maps
+      iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7286615.899145391!2d30.8768375!3d26.906099949999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1592855952380!5m2!1sar!2seg" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0")
+
+
+    section.footer
+      .End
+        img(src="imges/footer/logo-81x119.png", alt="")
+        ul
+          li
+            i.fab.fa-facebook-f.fa-fw
+          li
+            i.fab.fa-twitter.fa-fw
+          li
+            i.fab.fa-google-plus-g.fa-fw
+          li
+            i.fab.fa-instagram.fa-fw
+        p © 2020. All Rights Reserved. Privacy Policy
+
+
+    #scroll-top
+      i.fa.fa-chevron-up.fa-lg
+
+    .loading
+      .fix
+        .sk-folding-cube
+          .sk-cube1.sk-cube
+          .sk-cube2.sk-cube
+          .sk-cube4.sk-cube
+          .sk-cube3.sk-cube
+
+
+
+
+    script(src="JS/jquery-3.4.1.min.js")
+    //- script(src="JS/jquery.nicescroll.min.js")
+    script(src="JS/bootstrap3.min.js")
+    script(src="JS/slick.min.js")
+    script(src="JS/uikit.min.js")
+    script(src="JS/wow.min.js")
+    script new WOW().init();
+    script(src="JS/main.js")
+
